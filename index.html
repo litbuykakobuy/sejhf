@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<!-- index.html. Open locally and use Export static website to create all 21 pages. The source uses English and a custom illustration. -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kakobuy Spreadsheet | Categories and Shopping Guides</title>
+<meta name="description" content="Browse ten Kakobuy Spreadsheet categories and read twenty practical guides on sizing, listing comparisons, product checks, and spreadsheet organization.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Kakobuy Spreadsheet | Categories and Shopping Guides">
+<meta property="og:description" content="Browse ten categories and twenty practical guides for comparing finds.">
+<meta name="theme-color" content="#171a2a">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"Kakobuy Spreadsheet Guide","inLanguage":"en"}</script>
+<style>
+:root{color-scheme:light;--ink:#191b2b;--muted:#515669;--paper:#faf9f3;--white:#fff;--line:#dedde2;--lime:#deff55;--dark:#171a2a;--violet:#bca8ff;font:16px/1.55 system-ui,sans-serif}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink)}
+a{color:inherit}
+button,input,summary{font:inherit}
+button,summary{cursor:pointer}
+:focus-visible{outline:3px solid #7959ec;outline-offset:4px}
+.wrap{width:min(1120px,calc(100% - 32px));margin-inline:auto}
+.skip{position:fixed;top:8px;left:12px;z-index:9;transform:translateY(-160%);background:var(--lime);padding:8px 14px;color:var(--ink)}
+.skip:focus{transform:none}
+.top{position:sticky;top:0;z-index:4;background:rgba(19,21,36,.93);color:#fff;backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px)}
+.top .wrap,.bar{display:flex;align-items:center;justify-content:space-between;gap:16px}
+.top .wrap{min-height:64px}
+.brand{display:inline-flex;align-items:center;gap:9px;font-weight:850;text-decoration:none}
+.mark{display:grid;place-items:center;width:30px;height:30px;border-radius:8px;background:var(--lime);color:var(--dark)}
+.desktop{display:flex;align-items:center;gap:22px}
+.desktop>a,.bar>a{text-decoration:none;font-weight:700}
+.top :focus-visible,.bar :focus-visible,dialog :focus-visible{outline-color:var(--lime)}
+details{position:relative}
+summary{font-weight:750}
+.drop{position:absolute;right:0;top:calc(100% + 12px);width:230px;max-height:65vh;overflow:auto;margin:0;padding:8px;list-style:none;background:var(--dark);border:1px solid #54586e;border-radius:14px}
+.drop a,.sheet-grid a{display:block;padding:7px 10px;text-decoration:none;border-radius:7px}
+.drop a:hover,.sheet-grid a:hover{background:var(--lime);color:var(--ink)}
+main{padding-block:22px 36px}
+section[id],main[id]{scroll-margin-top:82px}
+.hero{isolation:isolate;position:relative;overflow:hidden;min-height:280px;display:grid;align-items:center;padding:clamp(25px,5vw,58px);border-radius:24px;background:#242244;color:white}
+.hero-art{position:absolute;inset:0;width:100%;height:100%;z-index:-2}
+.hero::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,#17182f 3%,#211d3e 38%,rgba(32,25,65,.68) 66%,rgba(32,25,65,.08))}
+.eyebrow{font-size:.75rem;letter-spacing:.17em;text-transform:uppercase;font-weight:850}
+.hero .eyebrow{color:var(--lime)}
+h1,h2,h3,p{margin:0}
+h1,h2,h3{line-height:1.11}
+h1{font-size:clamp(2.35rem,6.2vw,5rem);letter-spacing:-.065em;max-width:760px}
+h2{font-size:clamp(1.65rem,3.6vw,2.55rem);letter-spacing:-.045em}
+.hero p{margin-top:12px;max-width:46ch}
+.actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:19px}
+.btn,.category,.guide{display:flex;align-items:center;justify-content:space-between;gap:10px;text-decoration:none;font-weight:800}
+.btn{border-radius:10px;padding:11px 16px;background:var(--lime);color:var(--ink);border:1px solid var(--lime)}
+.btn.alt{background:var(--violet);border-color:var(--violet)}
+.btn:hover{filter:brightness(1.08)}
+.section{margin-top:27px}
+.heading{display:flex;align-items:end;justify-content:space-between;gap:10px;margin-bottom:12px}
+.heading p,.lead,.crumb{color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,190px),1fr));gap:8px}
+.category,.guide{min-height:52px;padding:10px 13px;border-radius:12px;border:1px solid var(--line);background:var(--white)}
+.category:hover,.guide:hover{background:var(--lime);border-color:var(--ink)}
+.guides{grid-template-columns:repeat(auto-fit,minmax(min(100%,255px),1fr))}
+.guide span:last-child,.category span:last-child{flex:none}
+footer{padding-block:18px 24px;border-top:1px solid var(--line);color:var(--muted)}
+.export{margin-top:14px}
+.export form{display:flex;flex-wrap:wrap;align-items:end;gap:9px;margin-top:8px}
+.export label{display:grid;gap:4px}
+.export input{min-width:0;max-width:100%;border:1px solid #a0a1ac;border-radius:8px;padding:8px}
+.story{max-width:760px;margin-inline:auto}
+.crumb{margin-bottom:16px}
+.story article{background:var(--white);border:1px solid var(--line);border-radius:20px;padding:clamp(18px,5vw,44px)}
+.story h1{font-size:clamp(2rem,5.5vw,3.8rem);margin:7px 0 14px}
+.story h2{font-size:1.32rem;margin:21px 0 8px}
+.story p+p{margin-top:10px}
+.story aside{margin-top:20px}
+.story ul{padding-left:21px}
+.bar,dialog{display:none}
+[hidden]{display:none!important}
+@media(max-width:700px){
+  .desktop{display:none}
+  .top .wrap{min-height:55px}
+  .bar{display:flex;position:fixed;inset:auto 0 0;z-index:4;background:rgba(19,21,36,.94);color:white;backdrop-filter:blur(16px);padding:8px 14px calc(8px + env(safe-area-inset-bottom))}
+  .bar>*{flex:1;text-align:center;min-height:44px;display:grid;place-items:center}
+  .bar button,dialog button{color:white;background:#31334d;border:1px solid #666a83;border-radius:10px;font-weight:750;padding:8px 12px}
+  dialog[open]{display:block;position:fixed;inset:auto 0 0;margin:0;width:100%;max-width:none;max-height:85dvh;overflow:auto;border:1px solid #666a83;border-radius:22px 22px 0 0;background:var(--dark);color:white;padding:18px 16px calc(16px + env(safe-area-inset-bottom))}
+  dialog::backdrop{background:#111326b3;backdrop-filter:blur(4px)}
+  .sheet-head{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:10px}
+  .sheet-grid{display:grid;grid-template-columns:1fr 1fr;gap:4px}
+  .sheet-grid a{background:#2c2f47;min-height:44px}
+  body{padding-bottom:calc(60px + env(safe-area-inset-bottom))}
+  .hero{min-height:245px}
+  .hero::before{background:linear-gradient(90deg,#17182f 6%,rgba(25,22,51,.85) 64%,rgba(25,22,51,.47))}
+  .heading{align-items:start;flex-direction:column;gap:3px}
+  #categories .grid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:340px){#categories .grid{grid-template-columns:1fr}.wrap{width:calc(100% - 24px)}}
+</style>
+<link rel="canonical" href="https://litbuykakobuy.github.io/sejhf/">
+</head>
+<body>
+<a class="skip" href="#content">Skip to content</a>
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="index.html"><span class="mark" aria-hidden="true">K</span>Kakobuy Spreadsheet</a>
+    <nav class="desktop" aria-label="Main navigation">
+      <a href="index.html#guides">Guides</a>
+      <details id="dropdown"><summary>Categories</summary><ul class="drop"></ul></details>
+    </nav>
+  </div>
+</header>
+<main class="wrap" id="content">
+  <section class="hero" aria-labelledby="hero-title">
+    <svg class="hero-art" aria-hidden="true" viewBox="0 0 1120 320" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <linearGradient id="paint" x2="100%" y2="100%"><stop stop-color="#4430c4"/><stop offset="1" stop-color="#c7a9ff"/></linearGradient>
+        <pattern id="mesh" width="28" height="28" patternUnits="userSpaceOnUse"><path d="M28 0H0v28" fill="none" stroke="#fff" stroke-opacity=".24"/></pattern>
+      </defs>
+      <path fill="url(#paint)" d="M0 0h1120v320H0z"/><path fill="url(#mesh)" d="M0 0h1120v320H0z"/>
+      <circle cx="907" cy="157" r="115" fill="#deff55"/>
+      <g transform="translate(807 22) rotate(13 120 130)">
+        <rect x="18" y="15" width="211" height="252" rx="20" fill="#23203d"/>
+        <rect x="0" y="0" width="211" height="252" rx="20" fill="#fcfbf5" stroke="#23203d" stroke-width="3"/>
+        <path d="M26 69h159M26 112h159M26 155h159M26 198h159M76 54v163M132 54v163" fill="none" stroke="#bfb5eb" stroke-width="2"/>
+        <rect x="25" y="22" width="75" height="17" rx="8" fill="#7959ec"/>
+        <path d="m28 175 44-24 30 18 31-41 44-29m-25 0h25v25" stroke="#23203d" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+      </g>
+      <path d="M1040 42h48m-24-24v48M767 244h32m-16-16v32" stroke="#fff" stroke-width="4" stroke-linecap="round"/>
+    </svg>
+    <div>
+      <p class="eyebrow">Finds directory · 10 categories</p>
+      <h1 id="hero-title">Kakobuy Spreadsheet</h1>
+      <p>Browse shoes, streetwear, and accessories. Use the guides below to compare listings, measurements, and costs before you choose.</p>
+      <div class="actions">
+        <a class="btn" href="https://findsspreadsheet.net/" target="_blank" rel="noopener nofollow">kakobuy spreadsheet <span aria-hidden="true">↗</span></a>
+        <a class="btn alt" href="https://findsspreadsheet.net/" target="_blank" rel="noopener nofollow">buy it now <span aria-hidden="true">↗</span></a>
+      </div>
+    </div>
+  </section>
+  <section class="section" id="categories" aria-labelledby="category-title">
+    <div class="heading"><h2 id="category-title">Shop by category</h2><p>Category links open in a new tab.</p></div>
+    <div class="grid" id="category-links">
+      <a class="category" href="https://findsspreadsheet.net/category-911-Shoes.html" target="_blank" rel="noopener nofollow">Shoes <span aria-hidden="true">↗</span></a>
+      <a class="category" href="https://findsspreadsheet.net/search-912/name/Shoes.html" target="_blank" rel="noopener nofollow">Hoodies/Sweaters <span aria-hidden="true">↗</span></a>
+      <a class="category" href="https://findsspreadsheet.net/search-913/name/Shoes.html" target="_blank" rel="noopener nofollow">T-Shirts <span aria-hidden="true">↗</span></a>
+      <a class="category" href="https://findsspreadsheet.net/search-914/name/Shoes.html" target="_blank" rel="noopener nofollow">Jackets <span aria-hidden="true">↗</span></a>
+      <a class="category" href="https://findsspreadsheet.net/search-915/name/Shoes.html" target="_blank" rel="noopener nofollow">Pants/Shorts <span aria-hidden="true">↗</span></a>
+      <a class="category" href="https://findsspreadsheet.net/search-916/name/Shoes.html" target="_blank" rel="noopener nofollow">Headwear <span aria-hidden="true">↗</span></a>
+      <a class="category" href="https://findsspreadsheet.net/search-917/name/Shoes.html" target="_blank" rel="noopener nofollow">Sets <span aria-hidden="true">↗</span></a>
+      <a class="category" href="https://findsspreadsheet.net/search-918/name/Shoes.html" target="_blank" rel="noopener nofollow">underwear/underpants <span aria-hidden="true">↗</span></a>
+      <a class="category" href="https://findsspreadsheet.net/search-919/name/Shoes.html" target="_blank" rel="noopener nofollow">Jersey <span aria-hidden="true">↗</span></a>
+      <a class="category" href="https://findsspreadsheet.net/search-920/name/Shoes.html" target="_blank" rel="noopener nofollow">Accessories <span aria-hidden="true">↗</span></a>
+    </div>
+  </section>
+  <section class="section" id="guides" aria-labelledby="guide-title">
+    <div class="heading"><h2 id="guide-title">Kakobuy Spreadsheet guides</h2><p>20 practical reads</p></div>
+    <div class="grid guides" id="guide-links">
+      <a class="guide" href="kakobuy-spreadsheet-beginners.html">Beginner’s guide <span aria-hidden="true">→</span></a>
+      <a class="guide" href="kakobuy-spreadsheet-shoes.html">Shoes and fit <span aria-hidden="true">→</span></a>
+      <a class="guide" href="kakobuy-spreadsheet-hoodies.html">Hoodies and sweaters <span aria-hidden="true">→</span></a>
+      <a class="guide" href="kakobuy-spreadsheet-t-shirts.html">T-shirt measurements <span aria-hidden="true">→</span></a>
+      <a class="guide" href="kakobuy-spreadsheet-jackets.html">Jackets and layering <span aria-hidden="true">→</span></a>
+      <a class="guide" href="kakobuy-spreadsheet-pants.html">Pants and shorts <span aria-hidden="true">→</span></a>
+      <a class="guide" href="kakobuy-spreadsheet-headwear.html">Headwear sizing <span aria-hidden="true">→</span></a>
+      <a class="guide" href="kakobuy-spreadsheet-sets.html">Matching sets <span aria-hidden="true">→</span></a>
+      <a class="guide" href="kakobuy-spreadsheet-underwear.html">Underwear sizing <span aria-hidden="true">→</span></a>
+      <a class="guide" href="kakobuy-spreadsheet-jerseys.html">Jersey fit and details <span aria-hidden="true">→</span></a>
+      <a class="guide" href="kakobuy-spreadsheet-accessories.html">Accessories checklist <span aria-hidden="true">→</span></a>
+      <a class="guide" href="kakobuy-spreadsheet-size-charts.html">How to read size charts <span aria-hidden="true">→</span></a>
+      <a class="guide" href="kakobuy-spreadsheet-photos.html">How to review photos <span aria-hidden="true">→</span></a>
+      <a class="guide" href="kakobuy-spreadsheet-budget.html">Total cost worksheet <span aria-hidden="true">→</span></a>
+      <a class="guide" href="kakobuy-spreadsheet-shipping.html">Shipping estimates <span aria-hidden="true">→</span></a>
+      <a class="guide" href="kakobuy-spreadsheet-listings.html">Compare listings <span aria-hidden="true">→</span></a>
+      <a class="guide" href="kakobuy-spreadsheet-wishlist.html">Build a wishlist <span aria-hidden="true">→</span></a>
+      <a class="guide" href="kakobuy-spreadsheet-broken-links.html">Check outdated links <span aria-hidden="true">→</span></a>
+      <a class="guide" href="kakobuy-spreadsheet-capsule.html">Build a capsule shortlist <span aria-hidden="true">→</span></a>
+      <a class="guide" href="kakobuy-spreadsheet-checklist.html">Pre-order checklist <span aria-hidden="true">→</span></a>
+    </div>
+  </section>
+</main>
+<nav class="bar" aria-label="Mobile navigation" hidden>
+  <a href="index.html">Home</a><button id="open-sheet" type="button" aria-haspopup="dialog">Categories</button><a href="index.html#guides">Guides</a>
+</nav>
+<dialog id="sheet" aria-labelledby="sheet-title">
+  <div class="sheet-head"><h2 id="sheet-title">Categories</h2><form method="dialog"><button type="submit" autofocus>Close</button></form></div>
+  <div class="sheet-grid"></div>
+</dialog>
+<footer>
+  <div class="wrap">
+    <p>Independent Kakobuy Spreadsheet browsing guide.</p>
+    <details class="export" id="export" hidden>
+      <summary>Export static website</summary>
+      <form id="export-form">
+        <label>Website URL (optional)<input name="siteUrl" type="url" placeholder="https://your-domain.com/"></label>
+        <button class="btn" type="submit">Download website ZIP</button>
+      </form>
+      <p>Unzip and host the files together. Add your website URL for canonical links and a sitemap.</p>
+    </details>
+  </div>
+</footer>
+<script id="navigation">
+const dialog = document.querySelector('#sheet');
+const dropdown = document.querySelector('#dropdown');
+const mobile = matchMedia('(max-width: 700px)');
+const source = document.querySelector('#category-links, #category-source');
+for (const link of source.querySelectorAll('a')) {
+  const menuLink = link.cloneNode(true);
+  const item = document.createElement('li');
+  menuLink.removeAttribute('class');
+  item.append(menuLink);
+  dropdown.querySelector('ul').append(item);
+  dialog.querySelector('.sheet-grid').append(menuLink.cloneNode(true));
+}
+document.querySelector('.bar').hidden = false;
+document.querySelector('#open-sheet').addEventListener('click', () => {
+  if (!dialog.open) dialog.showModal();
+});
+dialog.addEventListener('click', event => {
+  if (event.target === dialog || event.target.closest('a')) dialog.close();
+});
+document.addEventListener('click', event => {
+  if (!dropdown.contains(event.target)) dropdown.open = false;
+});
+dropdown.addEventListener('keydown', event => {
+  if (event.key === 'Escape' && dropdown.open) {
+    dropdown.open = false;
+    dropdown.querySelector('summary').focus();
+  }
+});
+mobile.addEventListener('change', event => {
+  if (!event.matches && dialog.open) dialog.close();
+  if (event.matches) dropdown.open = false;
+});
+</script>
+<script id="articles" type="application/json">
+[
+["beginners","Beginner’s Guide","Use a Kakobuy Spreadsheet to make a shortlist you can verify in a second pass.","Start with one category","Choose a category and write down the item, preferred color, size range, and maximum total cost. Save two or three plausible listings with their URLs and dates. Keeping your first search narrow makes differences between listings easier to spot.","Record what you know","Give each row a status such as Saved, Needs sizing, or Reviewed. Record the seller’s wording for the selected variant and mark missing details as Unknown. Before ordering, reopen the listing and check that the saved price and size still apply to the same variant.",[16,19]],
+["shoes","Shoes and Fit","Compare shoe listings using foot length, insole measurements, and photos of the exact pair.","Measure both feet","Stand on paper in the socks you intend to wear, mark your heel and longest toe, and measure both feet in millimeters. Use the longer measurement and compare it with the listing’s foot-length chart. If a chart gives insole length, ask how it was measured and compare it with a removable insole from a pair that fits.","Look beyond size","Check the toe shape, width notes, and outsole images. Save a side view and a top view for comparison. Two rows labeled EU 42 can fit differently when the toe box or heel shape changes.",[11,12]],
+["hoodies","Hoodies and Sweaters","Compare hoodie and sweater fit using flat measurements and fabric details.","Measure your reference layer","Lay a favorite hoodie flat and record chest width, body length, and sleeve length. Match the sleeve starting point to the seller’s chart. A sleeve measured from the center back will produce a different number from one measured from the shoulder seam.","Check the finishing details","Compare photos of the cuffs, hem, and hood lining. For example, a listing that specifies brushed fleece gives you a detail to confirm in a close-up. Save fabric composition, finish, and fit in separate columns so the rows remain easy to compare.",[3,4]],
+["t-shirts","T-Shirt Measurements","Use garment width and body length to shortlist T-shirts by fit.","Compare flat dimensions","Measure a T-shirt you like from armpit to armpit and from the high shoulder point to the hem. Match these points on the chart. A 54 cm flat chest width corresponds to roughly 108 cm around the garment when the front and back are the same width.","Separate fit from fabric","Keep separate notes for chest, length, shoulder, and material. If two rows show the same chest width, a dropped shoulder can still change how the sleeve sits. Check whether a quoted fabric weight refers to grams per square meter or the weight of the finished shirt.",[2,11]],
+["jackets","Jackets and Layering","Compare jacket measurements for the layers you plan to wear.","Plan the layer underneath","Choose the thickest layer you expect to wear under the jacket. Put it on with a jacket that fits and check whether you can reach forward comfortably. Use that jacket’s flat chest, shoulder, sleeve, and back length as your reference.","Inspect closures and lining","Look for separate photos of the lining, cuffs, zipper, and pockets. Record whether measurements were taken with the jacket closed. If the product page uses weather-resistance language, keep the exact claim and look for a stated test or specification before relying on it.",[2,12]],
+["pants","Pants and Shorts","Compare waist, rise, and leg measurements for pants and shorts.","Write down how the waist was measured","Lay a comfortable pair flat. Measure across the waistband, then note whether it was relaxed or stretched. For an elastic waist, save both measurements when available. Use consistent units and keep flat width separate from waist circumference.","Compare rise and leg shape","Record the front rise, inseam, and leg opening. Two pairs with the same waist and inseam may sit at different points on the body when their rises differ. For shorts, check the inseam alongside the overall side length to estimate where the hem will fall.",[7,11]],
+["headwear","Headwear Sizing","Match cap and beanie dimensions to the fit you prefer.","Measure the position where the cap sits","Wrap a flexible tape around your head at the height where you wear your cap. Keep it snug and record the measurement in centimeters. For adjustable caps, look for a stated range. If your measurement is near an endpoint, confirm how much adjustment is available.","Compare depth and brim shape","A cap can match your circumference and still sit higher than expected. Compare crown depth and brim length with a cap you own. On beanies, save relaxed width and cuffed height when provided, since the fold changes how much material sits above the ears.",[10,11]],
+["sets","Matching Sets","Evaluate the top and bottom of a matching set independently.","Check both charts","Record chest and body length for the top, then waist and inseam for the bottom. If your reference garments suggest different sizes, see whether the seller lets you choose sizes separately. Confirm that your selected option includes both pieces.","Compare the color across pieces","Save images showing the two items together under the same light. Compare trim, logos, and fabric texture as well as the stated color. For a set you intend to split into outfits, note one existing item you can wear with each piece before saving the listing.",[5,18]],
+["underwear","Underwear Sizing","Compare waist ranges, leg openings, and pack quantities for underwear.","Check which kind of measurement is listed","Compare a size chart’s recommended body waist with your body measurement. If it lists a relaxed garment waistband, compare it with a similar pair you own. Check whether a chart that lists two waist numbers describes the stretch range or two different sizes.","Review the selected pack","Record the fabric blend, leg length, and number of pieces for the exact variant. For example, two three-packs can differ in cut or color mix. Read the seller’s stated return conditions before opening a sealed pack or relying on an exchange.",[5,19]],
+["jerseys","Jersey Fit and Details","Compare jersey cuts, trims, and customization options before choosing a listing.","Decide how you will wear it","Measure a jersey or T-shirt that fits over your intended base layer. Compare chest width, shoulder shape, and back length. For raglan sleeves, look for a measurement from the collar or center back that you can reproduce on your reference garment.","Verify graphics and personalization","Record the exact team color, name, number, and patch selection. Review a close-up of the print or stitching if one is available. For custom text, compare spelling and capitalization with your order notes and review the seller’s policy for personalized orders.",[3,12]],
+["accessories","Accessories Checklist","Compare bag, belt, and jewelry dimensions against what you need to carry or wear.","Use dimensions that match the job","For a bag, compare the interior width and opening with the largest object you need to carry. For a belt, measure from the buckle pin to the hole you use on a belt that fits. Store these measurements separately from overall dimensions.","Inspect the parts that move","Request or review close-ups of zippers, clasps, adjusters, and attachment points. Save the stated material and any sizing option with the listing. If a necklace listing gives chain length, check whether that figure includes the extension or clasp.",[6,12]],
+["size-charts","How to Read Size Charts","Turn body and garment measurements into comparable spreadsheet rows.","Identify the measurement type","A body chart gives recommended wearer measurements. A garment chart lists dimensions of the finished item. Record the chart type and unit before comparing rows. Use 2.54 centimeters per inch and preserve the original number in a separate field.","Use the same measurement points","Measure a reference garment on a flat surface and follow the listing’s endpoints. If a seller lists a tolerance, keep that range in mind when judging a close fit. Leave any unclear field blank until you can confirm what the seller measured.",[3,5]],
+["photos","How to Review Product Photos","Use listing photos to compare visible construction and variant details.","Build a repeatable photo check","Save an overall view, one construction close-up, and an image that identifies the selected option. For shoes, compare left and right profiles and outsole views. For apparel, look at seams, hems, labels, and closures under similar lighting.","Separate what you see from what you infer","Write observations such as visible double stitching or a missing zipper view. If the color looks different across images, record the discrepancy and ask for a daylight photo. Keep seller claims about materials in their own column so they stay distinct from visible features.",[1,15]],
+["budget","Total Cost Worksheet","Compare spreadsheet finds by estimated total cost in a common currency.","Create a cost row","Record the item price, quantity, currency, domestic delivery, service fees, and estimated international delivery where applicable. Add any stated destination charges separately and mark unknown amounts. For an item priced at 24 with fees of 3 and a shipping estimate of 9 in the same currency, the known subtotal is 36.","Track when you priced it","Record the date and the exchange rate you used. Update the totals when a listing variant changes or a shipping quote expires. If a fee is shared across several items, record how you allocated it so your comparisons can be repeated.",[14,19]],
+["shipping","Shipping Estimates","Record packed dimensions and quote assumptions when comparing delivery estimates.","Save both weight and dimensions","Request packed weight and outer dimensions when available. Some services calculate a dimensional weight from length, width, and height. Use the divisor, unit, and rounding rule listed for your particular quote. A bulky lightweight item can take more space than its scale weight suggests.","Compare quotes on the same basis","Write down the destination, service level, estimated delivery window, and date for each quote. Record which items share a parcel and compare the same package assumptions across services. Recheck the quote if the packaging or item count changes.",[13,19]],
+["listings","Compare Listings","Compare two product listings using the same variant and evidence fields.","Standardize the comparison","Make one row per listing and capture the selected size, color, quantity, date checked, item price, and estimated total. Record the seller and URL so you can reopen the same option. Convert currencies separately from the original prices.","Decide using the evidence you have","Give each row a short notes field for measurements, image coverage, and unanswered questions. If one offer looks cheaper, verify whether both include the same pieces. Choose which missing detail would change your decision and look for that detail before ranking the rows.",[12,13]],
+["wishlist","Build a Wishlist","Organize saved Kakobuy Spreadsheet finds into a shortlist you can revisit.","Give each row a job","Use columns for item, category, URL, variant, budget, status, and last checked date. Add a sentence about why you saved it, such as a jacket to wear over a bulky knit. Use a consistent date format so that sorting keeps the oldest checks together.","Review one category at a time","Group similar items and choose the strongest candidate for each intended use. Archive duplicates and rows that have gone stale, keeping notes if they explain a past decision. Give anything still under consideration a next action such as confirm the sleeve length.",[15,17]],
+["broken-links","Check Outdated Links","Recheck saved links and keep a record of listing replacements.","Identify what changed","Open the saved URL and compare the destination title, images, and variant with your notes. A page can load successfully while showing a different item or a size that has sold out. Record the result as Missing, Changed, Sold out, or Confirmed and add the check date.","Keep replacement links traceable","If you find a plausible replacement, add it as a new row and reference the older entry. Recheck measurements, variant, and total cost from scratch. When an older URL redirects, copy the new destination only after confirming that it still represents the same item.",[16,19]],
+["capsule","Build a Capsule Shortlist","Use spreadsheet categories to choose pieces that work together.","Start with outfits you already wear","Write down three outfits and identify a gap that appears in more than one. A layer that fits over two favorite shirts has a clear job. Pick a small set of base colors from pieces you already own and record which outfits each listing could complete.","Check combinations for fit","Compare jacket room against hoodie bulk, and match trouser hems with the shoes you plan to wear. Save fit notes next to outfit ideas. When two options fill the same gap, use your measurements, preferred care routine, and total estimate to narrow the list.",[4,7]],
+["checklist","Pre-Order Checklist","Check your selected variant, measurements, and estimated total before ordering.","Verify the listing row","Reopen the exact saved URL and confirm the size, color, quantity, and current price. Compare the seller’s measurements with your reference item. Save any reply that clarifies a measurement and add the date, especially when more than one size chart appears on the listing.","Review the final estimate","Check what is included, which fees are estimated, the selected delivery service, and the seller’s stated return terms. Save the confirmed variant and final quote with your order notes. If a key measurement or cost is still unclear, record the open question for a follow-up.",[11,13]]
+]
+</script>
+<script id="exporter">
+const articles = JSON.parse(document.querySelector('#articles').textContent);
+const route = article => 'kakobuy-spreadsheet-' + article[0] + '.html';
+const escapeHtml = value => value.replace(/[&<>"']/g, ch => ({
+  '&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;', "'":'&#39;'
+})[ch]);
+
+function staticPage(article, base) {
+  const page = document.documentElement.cloneNode(true);
+  const get = selector => page.querySelector(selector);
+  for (const selector of ['#export', '#articles', '#exporter']) get(selector).remove();
+  get('.drop').replaceChildren();
+  get('.sheet-grid').replaceChildren();
+  get('#dropdown').open = false;
+  get('#sheet').removeAttribute('open');
+  get('.bar').hidden = true;
+  if (article) {
+    const [, name, intro, head1, body1, head2, body2, related] = article.map(
+      field => typeof field === 'string' ? escapeHtml(field) : field
+    );
+    const main = get('main');
+    const categories = get('#category-links');
+    categories.id = 'category-source';
+    categories.hidden = true;
+    categories.removeAttribute('class');
+    main.classList.add('story');
+    main.innerHTML = `
+      <nav class="crumb" aria-label="Breadcrumb"><a href="index.html">Home</a> / <a href="index.html#guides">Guides</a></nav>
+      <article>
+        <p class="eyebrow">Kakobuy Spreadsheet guide</p>
+        <h1>${name}</h1><p class="lead">${intro}</p>
+        <h2>${head1}</h2><p>${body1}</p>
+        <h2>${head2}</h2><p>${body2}</p>
+        <p><a href="index.html#categories">Browse all Kakobuy Spreadsheet categories</a></p>
+      </article>
+      <aside aria-label="Related guides"><h2>Related guides</h2><ul>
+        ${related.map(i => `<li><a href="${route(articles[i])}">${escapeHtml(articles[i][1])}</a></li>`).join('')}
+      </ul></aside>`;
+    main.append(categories);
+    const title = article[1] + ' | Kakobuy Spreadsheet';
+    get('title').textContent = title;
+    get('meta[name="description"]').content = article[2];
+    get('meta[property="og:title"]').content = title;
+    get('meta[property="og:description"]').content = article[2];
+    get('meta[property="og:type"]').content = 'article';
+    const schema = {'@context':'https://schema.org','@type':'Article',
+      headline:article[1],description:article[2],inLanguage:'en'};
+    if (base) schema.mainEntityOfPage = new URL(route(article), base).href;
+    get('script[type="application/ld+json"]').textContent = JSON.stringify(schema);
+  }
+  if (base) {
+    const url = new URL(article ? route(article) : '', base).href;
+    const canonical = document.createElement('link');
+    canonical.rel = 'canonical';
+    canonical.href = url;
+    const ogUrl = document.createElement('meta');
+    ogUrl.setAttribute('property', 'og:url');
+    ogUrl.content = url;
+    get('head').append(canonical, ogUrl);
+  }
+  return '<!DOCTYPE html>\n' + page.outerHTML + '\n';
+}
+
+const crcTable = Array.from({length:256}, (_, n) => {
+  for (let bit = 0; bit < 8; bit++) n = (n >>> 1) ^ (n & 1 ? 0xedb88320 : 0);
+  return n >>> 0;
+});
+
+function makeZip(files) {
+  const encoder = new TextEncoder();
+  const locals = [], directory = [];
+  let offset = 0, directorySize = 0;
+  for (const [filename, content] of files) {
+    const name = encoder.encode(filename), bytes = encoder.encode(content);
+    let crc = 0xffffffff;
+    for (const byte of bytes) crc = (crc >>> 8) ^ crcTable[(crc ^ byte) & 255];
+    crc = (crc ^ 0xffffffff) >>> 0;
+    const local = new DataView(new ArrayBuffer(30));
+    const central = new DataView(new ArrayBuffer(46));
+    for (const [pos, value] of [[4,20],[6,0x0800],[12,33],[26,name.length]]) local.setUint16(pos,value,true);
+    for (const [pos, value] of [[0,0x04034b50],[14,crc],[18,bytes.length],[22,bytes.length]]) local.setUint32(pos,value,true);
+    for (const [pos, value] of [[4,20],[6,20],[8,0x0800],[14,33],[28,name.length]]) central.setUint16(pos,value,true);
+    for (const [pos, value] of [[0,0x02014b50],[16,crc],[20,bytes.length],[24,bytes.length],[42,offset]]) central.setUint32(pos,value,true);
+    locals.push(local.buffer, name, bytes);
+    directory.push(central.buffer, name);
+    offset += 30 + name.length + bytes.length;
+    directorySize += 46 + name.length;
+  }
+  const end = new DataView(new ArrayBuffer(22));
+  end.setUint32(0,0x06054b50,true);
+  end.setUint16(8,files.length,true);
+  end.setUint16(10,files.length,true);
+  end.setUint32(12,directorySize,true);
+  end.setUint32(16,offset,true);
+  return new Blob([...locals,...directory,end.buffer],{type:'application/zip'});
+}
+
+function siteFiles(base) {
+  const files = [['index.html', staticPage(null, base)]];
+  for (const article of articles) files.push([route(article), staticPage(article, base)]);
+  if (base) {
+    const paths = ['', ...articles.map(route)];
+    files.push(['sitemap.xml', '<?xml version="1.0" encoding="UTF-8"?>\n' +
+      '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' +
+      paths.map(path => '<url><loc>' + escapeHtml(new URL(path, base).href) + '</loc></url>').join('\n') +
+      '\n</urlset>\n']);
+    if (base.pathname === '/') files.push(['robots.txt',
+      'User-agent: *\nAllow: /\nSitemap: ' + new URL('sitemap.xml', base).href + '\n']);
+  }
+  return files;
+}
+
+const exportForm = document.querySelector('#export-form');
+const siteUrl = exportForm.elements.siteUrl;
+siteUrl.addEventListener('input', () => siteUrl.setCustomValidity(''));
+document.querySelector('#export').hidden = false;
+exportForm.addEventListener('submit', event => {
+  event.preventDefault();
+  let base;
+  if (siteUrl.value.trim()) {
+    try { base = new URL(siteUrl.value.trim()); } catch {}
+    if (!base || !['http:','https:'].includes(base.protocol) || !base.hostname ||
+        base.username || base.password || base.search || base.hash ||
+        /\.html?$/i.test(base.pathname)) {
+      siteUrl.setCustomValidity('Enter an HTTP or HTTPS site root or directory URL.');
+      siteUrl.reportValidity();
+      return;
+    }
+    if (!base.pathname.endsWith('/')) base.pathname += '/';
+  }
+  const url = URL.createObjectURL(makeZip(siteFiles(base)));
+  const link = document.createElement('a');
+  link.href = url;
+  link.download = 'kakobuy-spreadsheet-site.zip';
+  document.body.append(link);
+  link.click();
+  link.remove();
+  setTimeout(() => URL.revokeObjectURL(url), 1000);
+});
+</script>
+</body>
+</html>
